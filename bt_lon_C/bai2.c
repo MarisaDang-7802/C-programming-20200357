@@ -27,7 +27,7 @@ int main()
     int N, T;
     FILE *inp = NULL;
     inp = fopen("BAG.INP", "r");
-    if (inp != NULL)
+    if (inp == NULL)
         return 1;
     fscanf(inp, "%d %d", &N, &T);
     Obj *objs = (Obj *)malloc(N * sizeof(Obj));
